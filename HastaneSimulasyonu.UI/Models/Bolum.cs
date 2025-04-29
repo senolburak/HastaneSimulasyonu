@@ -12,5 +12,6 @@ namespace HastaneSimulasyonu.UI.Models
         public string Adi { get; set; }
         public string Aciklama { get; set; }
         public List<Doktor> Doktorlar { get; set; }
+       
     }
 }

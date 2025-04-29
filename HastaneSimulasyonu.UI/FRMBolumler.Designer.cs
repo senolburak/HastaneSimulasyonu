@@ -65,6 +65,7 @@
             dgvBolumler.Location = new Point(8, 185);
             dgvBolumler.Name = "dgvBolumler";
             dgvBolumler.RowHeadersWidth = 51;
+            dgvBolumler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvBolumler.Size = new Size(409, 203);
             dgvBolumler.TabIndex = 2;
             // 
@@ -120,6 +121,7 @@
             btnGec.TabIndex = 1;
             btnGec.Text = ">>>>";
             btnGec.UseVisualStyleBackColor = true;
+            btnGec.Click += btnGec_Click;
             // 
             // FRMBolumler
             // 
