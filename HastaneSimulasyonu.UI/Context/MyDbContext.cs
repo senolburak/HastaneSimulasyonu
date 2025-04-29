@@ -10,6 +10,8 @@ namespace HastaneSimulasyonu.UI.Context
 {
     public class MyDbContext : DbContext
     {
+        //dbsetlerle oluşturduğum classları database tablo olarak taşıyorum.
+        //migration göç işlemi 
         public DbSet<Bolum> Bolum { get; set; }
         public DbSet<Doktor> Doktor { get; set; }
         public DbSet<Hasta> Hasta { get; set; }

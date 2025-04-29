@@ -81,6 +81,12 @@ namespace HastaneSimulasyonu.UI
                 ClearInputs();
             }
         }
+
+        private void btnGec_Click(object sender, EventArgs e)
+        {
+            FRMDoktorlar fRMDoktorlar = new FRMDoktorlar();
+            fRMDoktorlar.ShowDialog();
+        }
     }
 }
 
