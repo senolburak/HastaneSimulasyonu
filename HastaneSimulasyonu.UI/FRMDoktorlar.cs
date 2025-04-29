@@ -93,7 +93,7 @@ namespace HastaneSimulasyonu.UI
         }
         private void btnSil_Click(object sender, EventArgs e)
         {
-            if(dgvDoktorlar.SelectedRows.Count==0)
+            if (dgvDoktorlar.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Lütfen Silmek İstediğiniz Satırı Seçiniz");
                 return;
@@ -118,6 +118,12 @@ namespace HastaneSimulasyonu.UI
             secilenDoktor.BolumId = (cmbBolumler.SelectedItem as Bolum).Id;
 
             _db.SaveChanges();
+        }
+
+        private void btnGec_Click(object sender, EventArgs e)
+        {
+            FRMRandevu fRMRandevu = new FRMRandevu();
+            fRMRandevu.ShowDialog();
         }
     }
 }

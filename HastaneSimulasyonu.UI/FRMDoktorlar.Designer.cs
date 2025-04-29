@@ -84,6 +84,7 @@
             btnGec.TabIndex = 5;
             btnGec.Text = ">>>>>";
             btnGec.UseVisualStyleBackColor = true;
+            btnGec.Click += btnGec_Click;
             // 
             // btnGuncelle
             // 
